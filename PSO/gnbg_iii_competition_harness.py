@@ -144,11 +144,11 @@ def main():
     
     # Algorithm parameters (cia keiciam)
     AlgorithmParams = {}
-    AlgorithmParams['PopulationSize'] = 30
-    AlgorithmParams['InertiaWeight'] = 0.4
-    AlgorithmParams['C1'] = 2.0
-    AlgorithmParams['C2'] = 2.0
-    AlgorithmParams['VmaxFactor'] = 0.1
+    AlgorithmParams['PopulationSize'] = 20
+    AlgorithmParams['InertiaWeight'] = 0.95
+    AlgorithmParams['C1'] = 1.0
+    AlgorithmParams['C2'] = 1.0
+    AlgorithmParams['VmaxFactor'] = 0.5
     
     # Evaluation budgets at which error is reported
     evalPoints    = [10000, 50000, 100000, 150000, 200000,
