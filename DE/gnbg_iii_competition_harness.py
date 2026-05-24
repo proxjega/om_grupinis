@@ -143,17 +143,13 @@ def main():
     AlgorithmHandle = run_algorithm_template.runAlgorithmTemplate  # <<< CHANGE IF YOU USE ANOTHER FILE
     
     # Number of independent runs per problem (competition suggestion: 25–31)
-    RunNumber = 2
+    RunNumber = 5
     
-    # Algorithm parameters (modify as needed for your method)
+    # Algorithm parameters (sita keiciam)
     AlgorithmParams = {}
     AlgorithmParams['PopulationSize'] = 100  # Example for population-based methods
     AlgorithmParams['F'] = 0.5              # Example (DE mutation factor)
     AlgorithmParams['Cr'] = 0.9              # Example (DE crossover rate)
-    # Add any algorithm-specific fields you need, e.g.:
-    # AlgorithmParams['w'] = 0.7  # inertia (for PSO)
-    # AlgorithmParams['c1'] = 1.5
-    # AlgorithmParams['c2'] = 1.5
     
     # Evaluation budgets at which error is reported
     evalPoints    = [10000, 50000, 100000, 150000, 200000,
@@ -194,7 +190,7 @@ def main():
     
     # Which problems to test (default: all 24)
     # problemsToTest = list(range(1, 25))  # 1 to 24
-    problemsToTest = [1, 7]
+    problemsToTest = [1, 7, 11, 17, 23]
     # Example: problemsToTest = [1,2,3,4,5,6,11,12,13,14,15,16]
     
     # Pre-allocate result dict

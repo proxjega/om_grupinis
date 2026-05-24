@@ -140,19 +140,15 @@ def main():
     AlgorithmHandle = run_algorithm_template.runAlgorithmTemplate
     
     # Number of independent runs per problem (competition suggestion: 25–31)
-    RunNumber = 2
+    RunNumber = 5
     
-    # Algorithm parameters (modify as needed for your method)
+    # Algorithm parameters (cia keiciam)
     AlgorithmParams = {}
     AlgorithmParams['PopulationSize'] = 50
     AlgorithmParams['InertiaWeight'] = 0.729
     AlgorithmParams['C1'] = 1.49445
     AlgorithmParams['C2'] = 1.49445
     AlgorithmParams['VmaxFactor'] = 0.2
-    # Add any algorithm-specific fields you need, e.g.:
-    # AlgorithmParams['w'] = 0.7  # inertia (for PSO)
-    # AlgorithmParams['c1'] = 1.5
-    # AlgorithmParams['c2'] = 1.5
     
     # Evaluation budgets at which error is reported
     evalPoints    = [10000, 50000, 100000, 150000, 200000,
