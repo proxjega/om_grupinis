@@ -79,4 +79,12 @@ AlgorithmParams['InertiaWeight'] = 0.5
 AlgorithmParams['C1'] = 1.5
 AlgorithmParams['C2'] = 1.5
 AlgorithmParams['VmaxFactor'] = 0.05
+
+# 7. Super Exploration-focused (larger pop, higher inertia)
+AlgorithmParams = {}
+AlgorithmParams['PopulationSize'] = 150
+AlgorithmParams['InertiaWeight'] = 0.85
+AlgorithmParams['C1'] = 1.5
+AlgorithmParams['C2'] = 1.0
+AlgorithmParams['VmaxFactor'] = 0.3
 ```

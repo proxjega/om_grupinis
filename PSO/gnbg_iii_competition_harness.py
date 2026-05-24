@@ -140,15 +140,15 @@ def main():
     AlgorithmHandle = run_algorithm_template.runAlgorithmTemplate
     
     # Number of independent runs per problem (competition suggestion: 25–31)
-    RunNumber = 5
+    RunNumber = 4
     
     # Algorithm parameters (cia keiciam)
     AlgorithmParams = {}
-    AlgorithmParams['PopulationSize'] = 50
-    AlgorithmParams['InertiaWeight'] = 0.729
-    AlgorithmParams['C1'] = 1.49445
-    AlgorithmParams['C2'] = 1.49445
-    AlgorithmParams['VmaxFactor'] = 0.2
+    AlgorithmParams['PopulationSize'] = 30
+    AlgorithmParams['InertiaWeight'] = 0.4
+    AlgorithmParams['C1'] = 2.0
+    AlgorithmParams['C2'] = 2.0
+    AlgorithmParams['VmaxFactor'] = 0.1
     
     # Evaluation budgets at which error is reported
     evalPoints    = [10000, 50000, 100000, 150000, 200000,
